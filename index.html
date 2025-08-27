@@ -201,15 +201,16 @@
             </p>
             <div class="bg-white text-gray-900 p-8 rounded-xl shadow-lg max-w-lg mx-auto">
                 <h3 class="text-2xl font-bold mb-4">Preencha o formulário abaixo:</h3>
-                <form class="space-y-4">
+                <!-- Formulário de captura de leads com a URL do Formspree configurada -->
+                <form class="space-y-4" action="https://formspree.io/f/xrbagjqq" method="POST">
                     <div>
-                        <input type="text" placeholder="Nome" class="w-full p-3 border border-gray-300 rounded-lg" aria-label="Nome">
+                        <input type="text" name="Nome" placeholder="Nome" class="w-full p-3 border border-gray-300 rounded-lg" aria-label="Nome" required>
                     </div>
                     <div>
-                        <input type="text" placeholder="WhatsApp" class="w-full p-3 border border-gray-300 rounded-lg" aria-label="WhatsApp">
+                        <input type="text" name="WhatsApp" placeholder="WhatsApp" class="w-full p-3 border border-gray-300 rounded-lg" aria-label="WhatsApp" required>
                     </div>
                     <div>
-                        <input type="text" placeholder="Valor do Aporte Desejado" class="w-full p-3 border border-gray-300 rounded-lg" aria-label="Valor do Aporte Desejado">
+                        <input type="text" name="Valor_Aporte_Desejado" placeholder="Valor do Aporte Desejado" class="w-full p-3 border border-gray-300 rounded-lg" aria-label="Valor do Aporte Desejado" required>
                     </div>
                     <button type="submit" class="w-full bg-gray-900 text-white font-semibold py-3 px-8 rounded-full hover:bg-gray-700 transition-colors duration-300">
                         QUERO INVESTIR AGORA
