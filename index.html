@@ -168,7 +168,7 @@
                 <div class="mb-8">
                     <label class="block text-lg font-semibold mb-2">Qual o tipo de consórcio você prefere?</label>
                     <div class="flex justify-center sm:justify-start gap-4">
-                        <button id="btnAutomovel" class="btn-consorcio px-6 py-3 rounded-full border border-gray-300 text-gray-700 font-medium transition-colors duration-300 hover:bg-gray-200">
+                        <button id="btnAutomovel" class="btn-consorcio px-6 py-3 rounded-full border border-gray-300 text-gray-700 font-medium transition-colors duration-300 hover:bg-gray-200 selected">
                             Automóvel
                         </button>
                         <button id="btnImovel" class="btn-consorcio px-6 py-3 rounded-full border border-gray-300 text-gray-700 font-medium transition-colors duration-300 hover:bg-gray-200">
@@ -237,7 +237,7 @@
         document.addEventListener('DOMContentLoaded', () => {
 
             // Dados das cotas de consórcio e sugestões
-            // Essa estrutura de dados pode ser facilmente exportada para um arquivo JSON no futuro para facilitar a manutenção.
+            // Esta estrutura de dados pode ser facilmente exportada para um arquivo JSON no futuro para facilitar a manutenção.
             const simuladorData = {
                 // A taxa de ganho na venda da carta contemplada. É uma projeção de ágio de mercado.
                 taxaGanhoVenda: 0.30,
@@ -294,7 +294,7 @@
             const investimentoSelect = document.getElementById('investimentoMensal');
             const btnAutomovel = document.getElementById('btnAutomovel');
             const btnImovel = document.getElementById('btnImovel');
-            const btnCalcular = document.getElementById('btnCalcular'); // Novo botão
+            const btnCalcular = document.getElementById('btnCalcular');
             const resultadosDiv = document.getElementById('resultadosSimulacao');
 
             // Estado da simulação
